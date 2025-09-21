@@ -7,19 +7,11 @@ import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
 import BigNumberTokenomics from '@/components/sections/layouts/tokenomics/BigNumberTokenomics';
 import FooterLogoEmphasisBackgroundGradient from '@/components/footer/FooterLogoEmphasisBackgroundGradient';
 
-const navLinks = [
-  { name: 'Hero', id: 'hero' },
-  { name: 'About', id: 'about' },
-  { name: 'How to Buy', id: 'how-to-buy' },
-  { name: 'Tokenomics', id: 'tokenomics' },
-  { name: 'Footer', id: 'footer' }
-];
-
 export default function Home() {
   return (
     <SiteThemeProvider theme={{ styleVariant: "futuristicAndOutOfBox", colorTemplate: 2, textAnimation: "slide" }}>
       <div id="nav" data-section="nav">
-        <NavbarStyleMinimal logoSrc="/images/logo.svg" logoAlt="Xeven Logo" buttonText="Get in touch" />
+        <NavbarStyleMinimal logoSrc="/images/logo.svg" buttonText="Get in touch" />
       </div>
 
       <div id="hero" data-section="hero" className="scroll-mt-24">
@@ -47,7 +39,7 @@ export default function Home() {
       </div>
 
       <div id="footer" data-section="footer" className="scroll-mt-24">
-        <FooterLogoEmphasisBackgroundGradient logoSrc="/images/logo.svg" logoAlt="Xeven Logo" logoText="Xeven" items={[
+        <FooterLogoEmphasisBackgroundGradient logoSrc="/images/logo.svg" logoText="Xeven" items={[
           { label: "Privacy Policy", onClick: () => console.log('Privacy Policy clicked') },
           { label: "Terms of Service", onClick: () => console.log('Terms of Service clicked') },
           { label: "Contact Us", onClick: () => console.log('Contact Us clicked') }
