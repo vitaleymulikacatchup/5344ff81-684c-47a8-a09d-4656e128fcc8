@@ -6,6 +6,7 @@ import CtaAbout from '@/components/sections/layouts/about/CtaAbout';
 import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
 import BigNumberTokenomics from '@/components/sections/layouts/tokenomics/BigNumberTokenomics';
 import FooterLogoEmphasisBackgroundGradient from '@/components/footer/FooterLogoEmphasisBackgroundGradient';
+import { Shield, Users, Chart } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -32,9 +33,9 @@ export default function Home() {
 
       <div id="tokenomics" data-section="tokenomics" className="scroll-mt-24">
         <BigNumberTokenomics title="Tokenomics Overview" description="Learn about our key metrics." kpiItems={[
-          { value: "$50M", description: "Market Cap", longDescription: "Total market capitalization of Xeven.", icon: "Shield" },
-          { value: "1M", description: "Active Users", longDescription: "Total active users on the platform.", icon: "Users" },
-          { value: "2.5M", description: "Transactions", longDescription: "Total transactions processed to date.", icon: "Chart" }
+          { value: "$50M", description: "Market Cap", longDescription: "Total market capitalization of Xeven.", icon: Shield },
+          { value: "1M", description: "Active Users", longDescription: "Total active users on the platform.", icon: Users },
+          { value: "2.5M", description: "Transactions", longDescription: "Total transactions processed to date.", icon: Chart }
         ]} />
       </div>
 
